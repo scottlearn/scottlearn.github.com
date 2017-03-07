@@ -1,5 +1,7 @@
 ## Welcome to GitHub Pages
 
+[test](https://scottlearn.github.io/ife/xiaowei/01/ife%E7%AC%AC%E4%B8%80%E8%AF%BE.html)
+
 You can use the [editor on GitHub](https://github.com/scottlearn/scottlearn.github.com/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
