@@ -1,6 +1,12 @@
 # Poole
 
+<<<<<<< HEAD
 *The Strange Case of Dr. Jekyll and Mr. Hyde* tells the story of a lawyer investigating the connection of two persons, Dr. Henry Jekyll and Mr. Edward Hyde. Chief among the novel's supporting cast is a man by the name of Mr. Poole, Dr. Jekyll's loyal butler.
+=======
+[test](https://scottlearn.github.io/ife/xiaowei/01/ife%E7%AC%AC%E4%B8%80%E8%AF%BE.html)
+
+You can use the [editor on GitHub](https://github.com/scottlearn/scottlearn.github.com/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+>>>>>>> 0447a8e525e249f419095be881c1f838568e7d66
 
 -----
 
