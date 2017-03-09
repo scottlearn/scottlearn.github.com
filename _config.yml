@@ -2,9 +2,9 @@
 permalink:           pretty
 
 # Setup
-title:               Poole
-tagline:             The Jekyll Butler
-url:                 http://getpoole.com
+title:               Scott
+tagline:             The Nice Man
+url:                 http://scottlearn.github.io
 paginate:            1
 baseurl:             ""
 
@@ -12,11 +12,11 @@ baseurl:             ""
 #
 # We specify the directory for Jekyll so we can use @imports.
 sass:
-  sass_dir:          _sass
+  sass_dir:         _sass
   style:            :compressed
 
 # About/contact
-author:
+author:              
   name:              Mark Otto
   url:               https://twitter.com/mdo
   email:             markdotto@gmail.com
