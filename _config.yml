@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Permalinks
 permalink:           pretty
 
@@ -36,3 +37,10 @@ gems:
 collections:
   others:
     output:          ture
+=======
+title: Scott
+description: a blog for learning and entertainment.
+show_downloads: false
+google_analytics:
+theme: 
+>>>>>>> 0cc2770560206ac361e5145be05b6ec8866e94a8
