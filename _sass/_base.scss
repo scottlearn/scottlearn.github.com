@@ -14,6 +14,11 @@ body {
   padding: 0;
 }
 
+ul{
+  padding-left:0;
+  list-style-type: none;
+}
+
 html {
   font-family: $root-font-family;
   font-size: $root-font-size;
@@ -39,7 +44,7 @@ a {
   // `:focus` is linked to `:hover` for basic accessibility
   &:hover,
   &:focus {
-    text-decoration: underline;
+    text-decoration: none;
   }
 
   strong {

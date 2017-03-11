@@ -1,0 +1,40 @@
+.navbar {
+  padding: 24px 24px;
+  margin-bottom:1rem;
+}
+.nav-right {
+  float: right;
+}
+.nav {
+  list-style-type: none;
+
+}
+.nav-item {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0 1rem;
+  line-height: 1.2rem;
+  font-size:0.9rem;
+  }
+.clearfix {
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+    margin: 0;
+    float: none;
+  }
+}
+.nav-list {
+  float: right;
+}
+
+// page
+.page a{
+	color:#303030;
+}
+
+.page time{
+	color:#2196f3;
+	font-size: 0.7rem;
+}
