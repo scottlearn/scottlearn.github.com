@@ -1,0 +1,44 @@
+// index
+.page a{
+	color:#303030;
+}
+
+.page time{
+	color:#2196f3;
+	font-size: 0.7rem;
+}
+
+.page {
+  p {
+    margin-bottom:0.2rem;
+    a {
+      font-size: 1.2rem;
+      font-weight:600;
+      color:#515151;
+    }
+  }
+}
+
+.footer{
+  small{
+    font-size: 0.7rem;
+  }
+}
+
+// about
+#aboutme {
+  list-style-type: circle;
+  p {
+    color: #515151;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom:0.5rem;
+  }
+  li {
+    color: #303030;
+    font-size: 0.8rem;
+    margin-left: 1rem;
+  }
+}
+
+

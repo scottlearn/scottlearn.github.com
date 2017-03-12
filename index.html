@@ -4,7 +4,7 @@ title: Home
 ---
 
 
-  <h3 class="post-title">Posts</h3>
+  <p><a class="post-title" href="{{ site.baseurl }}{% link post-list.html %}">Posts</a></p>
   <ul class="post-list">
     {% for post in site.posts %}
       <li>
@@ -16,7 +16,7 @@ title: Home
     {% endfor %}
   </ul>
 
-  <h3 class="ief-title">IEF</h3>
+  <p><a class="ief-title" href="{{ site.baseurl }}{% link ief-list.html %}">IEF</a></p>
   <ul class="ief-list">
     {% for ief in site.iefs %}
       <li>
