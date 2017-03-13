@@ -1,0 +1,15 @@
+/*container*/
+.container{margin: 20px;padding: 20px;background-color: #eee;zoom: 1;}
+.container:after{content:"";display:block;clear: both;}
+
+/*leftwarp*/
+.leftwarp{float: left;width: 160px;padding: 20px;background-color: #8C8C8C;margin-right: 20px;color: #fff}
+.logo{width: 80px;height: 80px;margin-right: 20px;vertical-align: top;}
+
+/*rightwarp*/
+.rightwarp{float: right;padding: 20px 20px 0 20px;background-color: #8C8C8C;margin-left:20px;}
+.rightwarp img{display: block;width:80px;height: 80px;margin-bottom: 20px;}
+
+.aboutwarp{
+	margin: 0 140px 0 220px ;
+}
