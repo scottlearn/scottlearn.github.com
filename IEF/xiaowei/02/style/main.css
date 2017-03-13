@@ -1,0 +1,171 @@
+@charset "utf-8";
+
+/*公用*/
+.com-width {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.leftArea {
+	float: left;
+}
+
+.rightArea {
+	float: right;
+}
+
+.hide {
+	display: none;
+}
+
+.show {
+	display: block;
+}
+
+/*body*/
+body{
+	background: #dedede;
+}
+
+/*header*/
+header {
+	height: 60px;
+	background: #BAD586;
+}
+.logo{
+	float: left;
+	margin-left: 1rem;
+	padding-top: 10px;
+}
+.logo img{
+	width: 120px;
+	height: 40px;
+}
+.navbar{
+	float: right;
+	padding-top: 22px;
+	padding-right: 1rem;
+}
+.navbar li{
+	float: right;
+	list-style-type: disc;
+	width: 60px;
+	margin-left: 1.6rem;
+}
+.navbar a{
+	color: #fff;
+	font-size: 12px;
+}
+.navbar .active{
+	color: #959595;
+}
+
+/*article*/
+article{
+	margin: 20px 0;
+	background: #fff;
+	padding: 20px;
+	box-shadow: 2px 2px 1px #8F8F8F;
+}
+article h1{
+	font-size: 20px;
+	margin: 20px 0;
+}
+article h2{
+	font-size: 16px;
+	margin: 16px 0;
+	color: #7A7A7A;
+}
+.author{
+	font-size: 12px;
+	color: #7A7A7A;
+}
+article>p{
+	margin: 20px 0;
+	text-indent: 28px;
+}
+
+ /*Gallery*/
+ .gallery div{
+ 	text-align: center;
+ 	margin: 15px 0;
+ }
+.gallery p{
+	text-align: center;
+}
+.gallery img{
+	width: 20%;
+	height: 20%;
+}
+
+/*last article*/
+.list-ol li{
+	margin-left: 2rem;
+}
+article figure{
+	margin: 1rem 0;
+}
+.table table{
+	border-collapse:collapse;
+	width: 100%;
+	text-align: left;
+}
+.table td,th{
+	border: 1px solid #D5D4D4;
+	text-indent: 1rem;
+}
+.table table .num0{
+	background: #000;
+	color: #fff
+}
+.table table .num4{
+	background: #D5D4D4;
+	font-weight: bold;
+	}
+
+/*sidebar*/
+aside{
+	margin: 20px 0;
+	background: #fff;
+	padding: 20px;
+	box-shadow: 2px 2px 1px #8F8F8F;
+}
+aside h1{
+	line-height: 40px;
+	text-indent: 1rem;
+	vertical-align: top;
+	border-left: 2px solid #525252;
+	font-size: 16px;
+}
+
+/*sidebar table*/
+.sidebar table{
+	margin: 1rem 0;
+	line-height: 1.5rem;
+}
+.sidebar td:first-child{
+	width: 350px;
+	text-align: right;
+	padding-right: 1rem;
+	vertical-align: top;
+}
+.sidebar .commit{
+	width: 100%;
+	background: #BAD586;
+	border-radius: 10px;
+	line-height: 1.7rem;
+	outline:none;
+	border-color: #BAD586;
+	color:#fff;
+	font-size: 15px;
+}
+/*footer*/
+footer {
+	height: 60px;
+	background: #BAD586;
+	text-align: center;
+}
+footer p{
+	padding-top: 20px;
+	color: #fff;
+}

@@ -1,0 +1,62 @@
+.ief,
+.ief {
+  margin-bottom: 2em;
+
+  li + li {
+    margin-top: .25rem;
+  }
+}
+
+// Blog ief or ief title
+.ief-title,
+.ief-title,
+.ief-title a {
+  color: #303030;
+}
+.ief-title,
+.ief-title {
+  margin-top: 0;
+}
+
+// Meta data line below ief title
+.ief-date {
+  display: block;
+  margin-top: -.5rem;
+  margin-bottom: 1rem;
+  color: #9a9a9a;
+}
+
+
+// Related iefs
+.related {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.related-iefs {
+  padding-left: 0;
+  list-style: none;
+
+  h3 {
+    margin-top: 0;
+  }
+
+  li {
+    small {
+      font-size: 75%;
+      color: #999;
+    }
+
+    a:hover {
+      color: #268bd2;
+      text-decoration: none;
+
+      small {
+        color: inherit;
+      }
+    }
+  }
+}

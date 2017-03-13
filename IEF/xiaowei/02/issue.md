@@ -1,0 +1,42 @@
+* ```
+<nav class="navbar clearfix">
+	<ul>
+		<li><a class="active" href="#">导航链接四</a></li>
+		<li><a href="#">导航链接三</a></li>
+		<li><a href="#">导航链接二</a></li>
+		<li><a href="#">导航链接一</a></li>
+	</ul>
+</nav>
+```
+设置了.active的颜色，但是a.active继承父级属性。
+```
+.navbar a{
+	color: #fff;
+}
+.navbar .active{
+	color: #9F9E9E;
+}
+```
+上述代码成功
+```
+.navbar a{
+	color: #fff;
+}
+.active{
+	color: #9F9E9E;
+}
+```
+上述代码不成功
+
+突击知识点：css继承。
+
+* 设置img的尺寸是如何保证宽高比[对宽高同时使用相等百分比赋值]？什么时候用img什么时候用bg？
+* ```
+	<form action="#">
+					<dl>
+						<dt>请输入邮箱地址</dt><dd><input type="text" value="这是一个文本输入框"><br>邮箱地址请按要求格式输入</dd>
+					</dl>
+  ```
+  不用float，如何让dt和dd垂直上对齐？
+
+
