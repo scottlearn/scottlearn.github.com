@@ -1,0 +1,37 @@
+.com-width { margin: 0 100px;}
+.leftArea { float: left }
+.rightArea { float: right }
+.hide { display: none }
+.show { display: block }
+body { background: #dedede }
+header { height: 60px; background: #BAD586 }
+.logo { float: left; margin-left: 1rem; padding-top: 10px }
+.logo img { width: 120px; height: 40px }
+.navbar { float: right; padding-top: 22px; padding-right: 1rem }
+.navbar li { float: right; list-style-type: disc; width: 60px; margin-left: 1.6rem }
+.navbar a { color: #fff; font-size: 12px }
+.navbar .active { color: #959595 }
+.article{overflow: hidden;margin-top: 20px;padding-right: 5px;}
+article img{width: 50%;height: 50%;}
+article { margin: 0 0 20px 0; background: #fff; padding: 20px; box-shadow: 2px 2px 1px #8F8F8F }
+article h1 { font-size: 20px; margin: 20px 0 }
+article h2 { font-size: 16px; margin: 16px 0; color: #7A7A7A }
+.author { font-size: 12px; color: #7A7A7A }
+/*article>p { margin: 20px 0; text-indent: 28px }*/
+.gallery div { float: left;margin-right: 10px;height: 100px;width: 100px;border: 1px solid #ACABAB;padding: 5px;}
+.gallery p { text-align: center }
+.gallery img { width: 100%; height: 80% }
+.list-ol li { margin-left: 2rem }
+article figure { margin: 1rem 0 }
+.table table { border-collapse: collapse; width: 100%; text-align: left }
+.table td,
+th { border: 1px solid #D5D4D4; text-indent: 1rem }
+.table table .num0 { background: #000; color: #fff }
+.table table .num4 { background: #D5D4D4; font-weight: bold }
+aside { background: #fff; padding: 20px; box-shadow: 2px 2px 1px #8F8F8F;float: right; width: 320px; margin-left: 15px;}
+aside h1 { line-height: 40px; text-indent: 1rem; vertical-align: top; border-left: 2px solid #525252; font-size: 16px }
+.sidebar table { margin: 1rem 0; line-height: 1.5rem }
+.sidebar td:first-child { width: 40%; text-align: right; padding-right: 1rem; vertical-align: top }
+.sidebar .commit { width: 100%; background: #BAD586; border-radius: 10px; line-height: 1.7rem; outline: none; border-color: #BAD586; color: #fff; font-size: 15px }
+footer { height: 60px; background: #BAD586; text-align: center }
+footer p { padding-top: 20px; color: #fff }
