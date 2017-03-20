@@ -1,0 +1,34 @@
+// mixin
+@mixin wrap-shape($width,$height) {
+	width:$width;
+	height: $height;
+}
+
+@mixin float($float) {
+	float:$float;
+}
+
+@mixin m-place($margin-top,$margin-left) {
+	margin-top: $margin-top;
+	margin-left: $margin-left;
+}
+
+@mixin p-place($padding-top,$padding-left) {
+	padding-top: $padding-top;
+	padding-left: $padding-left;
+}
+
+
+
+//%name
+%ff-ht{
+	font-family:"simhei"; 
+}
+
+
+
+// $foo 
+$red: #be4f48;
+$gray-list-bg:#e3e3e5;
+$gray-bg:#ededec;
+$gray-font:#c3c2c2;
