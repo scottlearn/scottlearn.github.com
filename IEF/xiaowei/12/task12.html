@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>task12</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .row {
+            width: 100%;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 2px solid white;
+        }
+
+        th {
+            background: black;
+            font-weight: normal;
+            color: white;
+            text-align: left;
+        }
+
+        tr:nth-of-type(2n + 2) {
+            background: rgb(202, 202, 202);
+        }
+
+        tr:nth-of-type(-n+3) {
+            color: red;
+        }
+
+        tr:hover {
+            text-decoration: underline;
+        }
+
+        input {
+            margin: 0 auto;
+        }
+
+        .blue-border {
+            -moz-appearance: none;
+            -webkit-appearance: none;
+            border: 1px solid rgba(123, 173, 232, 0.7);
+            box-shadow: 0 0 2px 2px cornflowerblue;
+            border-radius: 1px;
+        }
+
+        #input-1 {
+            width: 80px;
+        }
+
+        div[id *='box'] {
+            margin-bottom: 10px;
+            width: 250px;
+            height: 100px;
+            justify-content: flex-end;
+            align-items: flex-end;
+        }
+
+        div[id *='box']>div {
+            margin-left: 2px;
+            width: 30px;
+            height: 30px;
+            color: white;
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        #box-1 {
+            background-color: lightseagreen;
+        }
+
+        #box-2 {
+            background: linear-gradient(to right, cornflowerblue, lightseagreen);
+        }
+
+        #box-3 {
+            background: cornflowerblue;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>排名</th>
+                <th>网站</th>
+                <th>热度</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1.</td>
+                <td>百度前端技术学院</td>
+                <td>13000</td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>百度前端技术学院</td>
+                <td>12000</td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td>百度前端技术学院</td>
+                <td>11000</td>
+            </tr>
+            <tr>
+                <td>4.</td>
+                <td>百度前端技术学院</td>
+                <td>10000</td>
+            </tr>
+            <tr>
+                <td>5.</td>
+                <td>百度前端技术学院</td>
+                <td>9000</td>
+            </tr>
+            <tr>
+                <td>6.</td>
+                <td>百度前端技术学院</td>
+                <td>8000</td>
+            </tr>
+            <tr>
+                <td>7.</td>
+                <td>百度前端技术学院</td>
+                <td>7000</td>
+            </tr>
+            <tr>
+                <td>8.</td>
+                <td>百度前端技术学院</td>
+                <td>6000</td>
+            </tr>
+            <tr>
+                <td>9.</td>
+                <td>百度前端技术学院</td>
+                <td>5000</td>
+            </tr>
+            <tr>
+                <td>10.</td>
+                <td>百度前端技术学院</td>
+                <td>4000</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br><br><br>
+    <input type="text" id="input-1">
+    <br><br><br>
+    <input type="text" class="blue-border" id="input-2">
+    <br><br><br>
+
+    <div class="flex" id="box-1">
+        <div class="center">1</div>
+        <div class="center">2</div>
+        <div class="center">3</div>
+    </div>
+</body>
+
+</html>

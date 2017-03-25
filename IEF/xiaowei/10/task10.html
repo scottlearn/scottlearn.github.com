@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>task10</title>
+	<style>
+		body{
+			margin:20px 0;
+			padding: 0;
+		}
+
+		.container{
+			display: flex;
+			border: 1px solid #000;
+			padding: 20px 20px 0;
+		}
+
+		.container div{
+			width: 150px;
+			border: 1px solid #f00;
+			margin-bottom: 20px;
+		}
+
+		.item01{
+			height: 120px;
+		}
+
+		.item02{
+			height: 100px;
+		}
+
+		.item03{
+			height: 40px;
+		}
+
+		.container .item04{
+			height: 200px;
+			border: 1px solid #0f0;
+		}
+
+		@media screen and (min-width: 640px){
+			.container{
+				flex-flow: row;
+				justify-content: space-between;
+				align-items: center;
+			}
+		}
+
+		@media screen and (max-width: 640px){
+			.container{
+				flex-flow: row wrap;
+				justify-content: space-between;
+				align-content: flex-start;
+			}
+
+			.item04{
+				order: -1;
+			}
+
+
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="item01"></div>
+		<div class="item02"></div>
+		<div class="item03"></div>
+		<div class="item04"></div>
+	</div>
+</body>
+</html>
