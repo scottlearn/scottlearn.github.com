@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>task01</title>
+</head>
+<body>
+	<label>请输入北京今天空气质量：<input id="aqi-input" type="text"></label><br/><br/>
+	<button id="button1" onclick="handler()">使用HTML事件处理程序提交</button>
+	<button id="button2">使用DOM0级事件处理程序提交</button>
+	<button id="button3">使用DOM2级事件处理程序提交</button><br/><br>
+	<div>您输入的值是：<span id="aqi-display">尚无录入</span></div>
+
+	<script type="text/javascript">
+		var input=document.getElementById('aqi-input');
+			display=document.getElementById('aqi-display');
+			btn2=document.getElementById('button2');
+			btn3=document.getElementById('button3');
+
+		// HTML事件处理程序
+		function handler() {
+			display.innerHTML=input.value;
+		};
+
+		// DOM0级事件处理程序
+		btn2.onclick=handler;
+
+		// DOM2级事件处理程序
+		function addhandler(element, eventType, handler) {
+			if (element.addEventListener) {
+				element.addEventListener(eventType,handler,false);
+			} else {
+				alert("你的浏览器不支持DOM2级事件处理程序！");
+			}
+		}
+
+		addhandler(btn3,"click",handler);
+	</script>
+</body>
+</html>
