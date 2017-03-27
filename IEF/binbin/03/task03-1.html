@@ -1,0 +1,115 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>IFE JavaScript Task 03</title>
+  </head>
+<body>
+
+  <ul id="source">
+    <li>北京空气质量：<b>90</b></li>
+    <li>上海空气质量：<b>70</b></li>
+    <li>天津空气质量：<b>80</b></li>
+    <li>广州空气质量：<b>50</b></li>
+    <li>深圳空气质量：<b>40</b></li>
+    <li>福州空气质量：<b>32</b></li>
+    <li>成都空气质量：<b>90</b></li>
+  </ul>
+
+  <ul id="resort">
+    <!-- 
+    <li>第一名：北京空气质量：<b>90</b></li>
+    <li>第二名：北京空气质量：<b>90</b></li>
+    <li>第三名：北京空气质量：<b>90</b></li>
+     -->
+
+  </ul>
+
+  <button id="sort-btn">排序</button>
+
+<script type="text/javascript">
+  
+/**
+ * getData方法
+ * 读取id为source的列表，获取其中城市名字及城市对应的空气质量
+ * 返回一个数组，格式见函数中示例
+ */
+function getData() {
+  /*
+  coding here
+  */
+  var source=document.getElementById('source');
+  var oli=source.getElementsByTagName('li');
+  var data=new Array();
+  for (var i = 0; i < oli.length; i++) {//遍历li元素
+    var cityName=oli[i].innerHTML.substring(0,2);//提取城市名称
+    var cityScore=oli[i].childNodes[1].innerHTML;//提取与城市对应的空气质量
+    data[i]=[cityName,cityScore];//将结果组成一维数组，通过赋值的方式写入data,形成二维数组
+  }
+
+  /*
+  data = [
+    ["北京", 90],
+    ["北京", 90]
+    ……
+  ]
+  */
+
+  return data;
+
+}
+
+/**
+ * sortAqiData
+ * 按空气质量对data进行从小到大的排序
+ * 返回一个排序后的数组
+ */
+function sortAqiData(data) {
+  data.sort(function(a,b){
+    return b[1]-a[1];
+  });//使用sort()方法排序，形成新的data数组
+  return data;
+
+}
+
+/**
+ * render
+ * 将排好序的城市及空气质量指数，输出显示到id为resort的列表中
+ * 格式见ul中的注释的部分
+ */
+function render(data) {
+  var list=document.getElementById("resort");
+  for (var i = 0; i < data.length; i++) {
+  var item=document.createElement("li");//创建li
+  list.appendChild(item)//将li插入到ul中
+  item.innerHTML="第"+(i+1)+"名:"+data[i][0]+"&nbsp;&nbsp;空气质量:<b>"+data[i][1]+"</b>";
+  //为li写入html内容
+  }
+  
+}
+
+function btnHandle() {
+  var aqiData = getData();
+  aqiData = sortAqiData(aqiData);
+  render(aqiData);
+}
+
+function init() {
+
+  // 在这下面给sort-btn绑定一个点击事件，点击时触发btnHandle函数
+  var btn=document.getElementById("sort-btn");//获得buttom元素
+  // btn.onclick=btnHandle;
+  btn.addEventListener("click",btnHandle,false);//为buttom绑定点击事件处理程序
+  setTimeout(function (){//设置定时器，一段时间后取消事件，避免点击事件重复生成html内容
+  btn.removeEventListener("click",btnHandle,false);
+  },1000);
+  
+}
+
+init();
+
+
+
+</script>
+</body>
+</html>
