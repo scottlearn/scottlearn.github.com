@@ -1,0 +1,115 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>IFE JavaScript Task 04</title>
+  </head>
+  <style type="text/css">
+    ul{
+      margin: 10px 0;
+      padding: 0;
+    }
+    ul li{
+      background-color: #000;
+      color: #fff;
+      float: left;
+      margin: 0 5px 5px 0 ;
+      padding: 5px;
+      list-style-type: none;
+      cursor: hand;
+    }
+  </style>
+<body>
+  <input type="text" id="input">
+  <button id="leftin">左侧入</button>  
+  <button id="rightin">右侧入</button>
+  <button id="leftout">左侧出</button>
+  <button id="rightout">右侧出</button>
+  <ul id="wrap"></ul>
+ 
+  <script type="text/javascript">
+    //一次性获得将要操作的元素对象
+    var input=document.getElementById("input");
+    var leftin=document.getElementById("leftin");
+    var rightin=document.getElementById("rightin");
+    var leftout=document.getElementById("leftout");
+    var rightout=document.getElementById("rightout");
+    var wrap=document.getElementById("wrap");
+ 
+
+    //检查数据，非数字则弹窗，数字则插入ul
+    function insertData(data,type) { 
+      var checkData=Number(data);//使用转型函数的值判断传入参数值类型
+      if (checkData==0) {//表示传入参数为空字符串
+        alert("请输入一个数字！");
+        // console.log(data);
+        input.value="请输入一个数字！";
+        // console.log(input.value);
+      } else if (!isNaN(checkData) && type==leftin){//是数字且为左侧入
+        wrap.insertBefore(newli(data),wrap.firstChild);
+        input.value="";
+      } else if(!isNaN(checkData) && type==rightin){//是数字且为右侧入
+        wrap.appendChild(newli(data));
+        input.value="";
+      } else{//非数字弹窗
+        alert("输入的不是数字，请重新输入！");
+        // console.log(isNaN(data));
+        input.value="请重新输入！";
+      }
+    }
+
+    //生成并返回li到insertData()
+    function newli(data) {
+      var li=document.createElement("li");
+      li.innerHTML=data;
+      li.id="item";
+      return li;
+    }
+
+    //采用事件委托绑定所有事件处理程序
+    document.onclick=function () {//绑定在根元素上
+      event=(function (){
+        return event? event: window.event;
+      })(event);//获得event对象
+      // console.log(event);
+
+      var target=(function () {
+        return event.target || event.srcElement;
+      })(event);//获得触发事件的元素对象
+      // console.log(target);
+
+      var num=input.value;//获得输入的内容
+
+      switch(target.id){//不同id的元素，不同的处理方式
+        case "leftin":
+          insertData(num,target); 
+          break;
+
+        case "rightin":
+          insertData(num,target); 
+          break;
+        
+        case "leftout":
+          if (wrap.firstChild != null) {
+            wrap.removeChild(wrap.firstChild); 
+          } else {
+            alert("没有数字，赶紧输入！")
+          }
+          break;
+        
+        case "rightout":
+          if (wrap.firstChild != null) {
+            wrap.removeChild(wrap.lastChild); 
+          } else {
+            alert("没有数字，赶紧输入！")
+          }
+          break;
+        
+        case "item":
+          wrap.removeChild(target) 
+          break;
+      }
+    }
+  </script>
+</body>
+</html>
