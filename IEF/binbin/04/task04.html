@@ -91,17 +91,19 @@
         
         case "leftout":
           if (wrap.firstChild != null) {
-            wrap.removeChild(wrap.firstChild); 
+            var delChild=wrap.removeChild(wrap.firstChild); 
+            alert("移出的数值是:"+delChild.innerHTML);
           } else {
-            alert("没有数字，赶紧输入！")
+            alert("没有数值，赶紧输入！")
           }
           break;
         
         case "rightout":
           if (wrap.firstChild != null) {
-            wrap.removeChild(wrap.lastChild); 
+            var delChild=wrap.removeChild(wrap.lastChild);
+            alert("移出的数值是:"+delChild.innerHTML);
           } else {
-            alert("没有数字，赶紧输入！")
+            alert("没有数值，赶紧输入！")
           }
           break;
         
